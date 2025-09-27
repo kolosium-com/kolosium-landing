@@ -45,7 +45,7 @@ body{
 
 .site-header{display:flex; align-items:center; justify-content:space-between; gap:16px}
 .brand{display:flex; align-items:center; gap:12px; text-decoration:none; color:inherit}
-.logo{display:block}
+.brand img{width:32px; height:32px; display:block}
 .wordmark{font-weight:800; letter-spacing:.2px; font-size:1.15rem}
 
 .nav{display:flex; gap:18px; align-items:center}
@@ -150,6 +150,11 @@ body{
   .btn.sm {
     padding: 0.5rem 0.8rem;
     font-size: 0.85rem;
+  }
+  
+  .brand img {
+    width: 28px;
+    height: 28px;
   }
   
   /* Hero section mobile */
