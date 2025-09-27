@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kolosium — Your AI Coach for Any Exam</title>
+    <meta name="description" content="Kolosium is an AI-powered learning arena for exam prep—personalised practice, realistic mocks, instant feedback, and readiness scores. Launching soon." />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Kolosium — Your AI Coach for Any Exam" />
+    <meta property="og:description" content="Adaptive practice, instant feedback, and readiness scores that tell you when to book the test." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://kolosium.com" />
+    <meta property="og:image" content="assets/og-cover.png" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Kolosium — Your AI Coach for Any Exam" />
+    <meta name="twitter:description" content="Practise exactly what moves the score. Launch coming soon." />
+    <meta name="twitter:image" content="assets/og-cover.png" />
+
+    <!-- PWA basics (optional icons can be added later) -->
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="assets/icon-192.png" />
+    <meta name="theme-color" content="#0f172a" />
+
+    <link rel="preload" href="assets/inter-var.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="assets/style.css" />
+    <script defer src="assets/app.js"></script>
+</head>
+<body>
+<header class="site-header container">
+    <a class="brand" href="#" aria-label="Kolosium home">
+        <!-- Inline wheat + arena (Colosseum) inspired icon -->
+        <img rel="icon" src="assets/favicon.svg"  alt="logo"/>
+
+        <span class="wordmark">Kolosium</span>
+    </a>
+    <nav class="nav">
+        <a href="#features">Features</a>
+        <a href="#how">How it works</a>
+        <a href="#waitlist" class="btn sm">Join waitlist</a>
+    </nav>
+</header>
+
+<main>
+    <!-- Hero -->
+    <section class="hero container">
+        <h1>Train Smart <span class="accent"><br>Pass Faster</span></h1>
+        <p class="lead">
+            Kolosium is your AI coach for any exam—pinpoint gaps, generate targeted practice, and know when you’re truly ready.
+            <strong>Launch coming soon.</strong>
+        </p>
+        <div class="cta">
+            <a class="btn primary" href="#waitlist">Get early access</a>
+            <a class="btn ghost" href="#features">Learn more</a>
+        </div>
+<!--        <figure class="hero-visual" aria-hidden="true">-->
+<!--            <img src="assets/hero-illustration.jpg" alt="" loading="lazy" />-->
+<!--        </figure>-->
+    </section>
+
+    <!-- Trust mini-strip -->
+    <section class="strip container" aria-label="Highlights">
+        <div>Personalised prep</div>
+        <div>Realistic mocks</div>
+        <div>Instant feedback</div>
+        <div>Readiness score</div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="features container">
+        <article>
+            <h3>Adaptive practice</h3>
+            <p>Our engine learns from every answer to focus on what moves your score the most.</p>
+        </article>
+        <article>
+            <h3>Explain & retain</h3>
+            <p>Clear, memory-friendly explanations reduce re-learning and speed up mastery.</p>
+        </article>
+        <article>
+            <h3>Exam-real mocks</h3>
+            <p>Timed, auto-marked practice mirrors the pressure and pacing of the real thing.</p>
+        </article>
+        <article>
+            <h3>Readiness signal</h3>
+            <p>Objective benchmarks show when to book the test with confidence.</p>
+        </article>
+    </section>
+
+    <!-- How it works -->
+    <section id="how" class="how container">
+        <ol>
+            <li><strong>Pick your exam</strong> — 11+, GCSEs, IELTS and more.</li>
+            <li><strong>Practise with AI</strong> — targeted questions and instant feedback.</li>
+            <li><strong>Track readiness</strong> — see gaps, fix them, and ace the test.</li>
+        </ol>
+    </section>
+
+    <!-- Waitlist -->
+    <section id="waitlist" class="waitlist container">
+        <h2>Join the waitlist</h2>
+        <p>Be first to try Kolosium. We’ll only email when there’s real news.</p>
+
+        <!-- Replace FORM_ENDPOINT with your Formspree/Pages-compatible endpoint -->
+        <form id="waitlist-form" action="https://formspree.io/f/FORM_ENDPOINT" method="POST">
+            <label class="sr-only" for="email">Email</label>
+            <input id="email" name="email" type="email" required placeholder="you@domain.com" autocomplete="email" />
+            <button class="btn primary" type="submit">Notify me</button>
+            <p class="form-note">By subscribing, you agree to our <a href="#privacy">privacy notice</a>.</p>
+            <p id="form-status" role="status" class="status" aria-live="polite"></p>
+        </form>
+    </section>
+</main>
+
+<footer class="site-footer container">
+    <div class="left">
+        <span>© <span id="year"></span> Kolosium</span>
+        <a href="#privacy">Privacy</a>
+        <a href="#terms">Terms</a>
+    </div>
+    <div class="right">
+        <span class="tag">Launching soon</span>
+    </div>
+</footer>
+
+<!-- Minimal privacy/terms anchors -->
+<section id="privacy" class="legal container">
+    <h2>Privacy notice</h2>
+    <p>We only collect your email to notify you about Kolosium’s launch and product updates. You can unsubscribe anytime.</p>
+</section>
+<section id="terms" class="legal container">
+    <h2>Terms</h2>
+    <p>This site is provided “as is” for pre-launch information and early access registration.</p>
+</section>
+</body>
+</html>
