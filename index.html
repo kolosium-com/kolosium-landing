@@ -103,11 +103,11 @@
         <h2>Join the waitlist</h2>
         <p>Be first to try Kolosium. We’ll only email when there’s real news.</p>
 
-        <!-- Replace FORM_ENDPOINT with your Formspree/Pages-compatible endpoint -->
-        <form id="waitlist-form" action="https://formspree.io/f/FORM_ENDPOINT" method="POST">
+        <form id="waitlist-form">
             <label class="sr-only" for="email">Email</label>
             <input id="email" name="email" type="email" required placeholder="you@domain.com" autocomplete="email" />
-            <button class="btn primary" type="submit">Notify me</button>
+            <input type="hidden" name="timestamp" id="timestamp" value="" />
+            <button class="btn primary" type="submit" id="submit-btn">Notify me</button>
             <p class="form-note">By subscribing, you agree to our <a href="#privacy">privacy notice</a>.</p>
             <p id="form-status" role="status" class="status" aria-live="polite"></p>
         </form>

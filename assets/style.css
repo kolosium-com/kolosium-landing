@@ -111,9 +111,18 @@ body{
 }
 .waitlist input:focus{border-color:var(--brand); box-shadow:0 0 0 3px rgba(37,99,235,.15)}
 .form-note{margin:0; font-size:.9rem; color:var(--muted); flex-basis:100%}
-.status{margin:.2rem 0 0; min-height:1.2rem; font-size:.95rem}
-.status.ok{color:#0a7d2b}
-.status.err{color:#b42318}
+.status{margin:.2rem 0 0; min-height:1.2rem; font-size:.95rem; transition: all 0.3s ease}
+.status.ok{color:#0a7d2b; background:#f0f9f0; padding:8px 12px; border-radius:6px; border:1px solid #d1f7d1}
+.status.err{color:#b42318; background:#fef2f2; padding:8px 12px; border-radius:6px; border:1px solid #fecaca}
+
+/* Form loading states */
+.btn:disabled{opacity:0.6; cursor:not-allowed}
+.waitlist input:disabled{opacity:0.6; cursor:not-allowed; background:#f8f9fa}
+
+/* Enhanced form focus states */
+.waitlist input:focus{border-color:var(--brand); box-shadow:0 0 0 3px rgba(198,166,100,.15); background:#fff}
+.waitlist input:invalid:not(:placeholder-shown){border-color:#b42318; box-shadow:0 0 0 3px rgba(180,35,24,.15)}
+.waitlist input:valid:not(:placeholder-shown){border-color:#0a7d2b; box-shadow:0 0 0 3px rgba(10,125,43,.15)}
 
 .site-footer{
   display:flex; justify-content:space-between; align-items:center; gap:12px;
